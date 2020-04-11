@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <title>More for the latin genre</title>
+  </head>
+  <body class="landing">
+    <header id="header">
+      <script>
+        var W = window;
+      </script>
+      <h1>
+        <a onclick="W.close();"><i class="icon fas fa-arrow-left"></i> Back</a>
+      </h1>
+    </header>
+    <section id="one" class="wrapper style1">
+      <div class="inner">
+        <article id="latin" class="feature right">
+          <span class="image big"><img src="../images/pic14.jpg" alt=""/></span>
+          <div class="content">
+            <h2>Latin</h2>
+            <p>
+              Latin music (Portuguese and Spanish: música latina) is a genre
+              used by the music industry as a catch-all term for music that
+              comes from Spanish- and Portuguese-speaking areas of the world,
+              namely Ibero America and Iberian Peninsula, as well as music sung
+              in either language.
+            </p>
+            <ul class="actions">
+              <li><a href="#quiz" class="button alt">Quiz</a></li>
+              
+              <br />
+              <br />
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Latin_music"
+                  class="button big special"
+                  target="_blank"
+                  >More Information</a
+                >
+              </li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="example" class="wrapper style3 special">
+      <div class="inner">
+        <header id="header" class="alt">
+          <h1>
+            <a><div>Examples</div></a>
+          </h1>
+        </header>
+        <header class="major narrow	">
+          <iframe
+            src="https://open.spotify.com/embed/user/digster.fm/playlist/5zI5n62RjsowYVeVCXZPw7"
+            width="330"
+            height="418"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+        </header>
+      </div>
+    </section>
+    <section id="one" class="wrapper style1">
+      <div id="quiz" class="inner">
+        <article class="feature left">
+          <div>
+            <h4 id="quiz_result" style="display: none; clear: both">
+              Question: <span id="questionNumber">0</span> Score:
+              <span id="score">0</span> Attempt: <span id="atempts">3</span>
+            </h4>
+            <div id="quiz1"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Template Quiz -->
+    <script type="text/html" id="quiz-template">
+      <iframe data-src="spotifyUrl" class="song" width="90" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <br />
+      <button class="alt" id="a1" data-content="a1"></button>
+      <button class="alt" id="a2" data-content="a2"></button>
+      <button class="alt" id="a3" data-content="a3"></button>
+    </script>
+    <!-- Template Begin -->
+    <script type="text/html" id="quiz-begin-template">
+      <h1>Begin Quiz</h1>
+      <button class="alt">Start!</button>
+    </script>
+    <!-- Template Finish -->
+    <script type="text/html" id="quiz-finish-template">
+      <h1>Final score</h1>
+      <h2 data-content="score"></h2>
+    </script>
+    <!-- END Templates-->
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.loadTemplate.min.js"></script>
+    <script src="latin-quiz.js"></script>
+    <script src="../assets/js/quiz.js"></script>
+  </body>
+</html>
